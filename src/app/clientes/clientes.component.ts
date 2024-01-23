@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Cliente } from './cliente';
 import { CommonModule } from '@angular/common';
 import { ClienteService } from './cliente.service';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-clientes',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './clientes.component.html',
   styleUrl: './clientes.component.css'
 })
